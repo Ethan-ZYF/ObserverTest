@@ -13,6 +13,9 @@ public class Bit extends Observable implements Observer {
         System.out.println(b1 + b2.toString());
     }
 
+    /**
+     * Flip the bit (on to off, off to on) and notify observers if the bit is turned off.
+     * */
     public void flip() {
         if (this.isOn) {
             this.isOn = false;
