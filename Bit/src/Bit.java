@@ -16,8 +16,8 @@ public class Bit extends Observable implements Observer {
     public void flip() {
         if (this.isOn) {
             this.isOn = false;
-            notifyObservers("bit turned off");
             setChanged();
+            notifyObservers("bit turned off");
         } else {
             this.isOn = true;
         }
@@ -31,8 +31,6 @@ public class Bit extends Observable implements Observer {
 
     @Override
     public void update(Observable o, Object arg) {
-        if (this.hasChanged()) {
-            ((Bit)o).flip();
-        }
+        this.flip();
     }
 }
