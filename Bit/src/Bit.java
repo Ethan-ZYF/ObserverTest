@@ -10,6 +10,7 @@ public class Bit extends Observable implements Observer {
         b2.addObserver(b1);
         b2.flip();
         b2.flip();
+        b2.flip();
         System.out.println(b1 + b2.toString());
     }
 
