@@ -6,3 +6,9 @@
 6. `git checkout -b <branch>`: Create and check out a new branch named <branch>, Drop the -b flag to check out an existing branch
 7. `git branch`: List all the branches in your repo. Add a <branch> argument to create a new branch with the name <branch>.
 8. `git merge`: Merge <branch> in to the current branch
+
+- Importance of branch
+  - Branching allows each developer to branch out from the original code base and isolated their work from others.
+  - It helps git easily merge versions later on.
+- Importance of Pull request
+  - they help ensure that quality reviewed code is merges into GitHub repository

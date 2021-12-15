@@ -1,3 +1,5 @@
+package ObserverTest;
+
 public class Byte {
 
     private Bit[] bits = new Bit[8];
